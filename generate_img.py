@@ -302,7 +302,7 @@ def contour_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, pa
 
     objs = bpy.data.objects
 
-    contDir = path + "/contRE"
+    contDir = path + "/contour_background"
     blackbg = contDir + "/black.jpg"
     whitebg = contDir + "/white.jpg"
 
