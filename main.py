@@ -54,7 +54,7 @@ def option_2():
             print("Path Error, check path")
         finally:
             sys.exit()
-    elif sys.platform == "Darwin":
+    elif sys.platform == "darwin":
         print("Macbook OS detected, run Macbook OS")
         os.system("/Applications/Blender/blender.app/Contents/MacOS/blender --background --python generate_img.py")
 
