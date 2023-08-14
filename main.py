@@ -3,6 +3,7 @@ import config
 import os
 import platform
 import generate_camo
+
 def main():
     print("Initialize Program...\n")
     # Get Config
