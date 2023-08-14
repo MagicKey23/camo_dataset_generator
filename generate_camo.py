@@ -15,9 +15,9 @@ def run_generator(folder_n, num_image, opt):
     color_param = setting(opt)
     while i <= num_image:
         image = camogen.generate(color_param)
-        image.save("./background{0}/background_blots_{1}.png".format(folder_n,i))
-        print("./background//background_blots_{0}.png".format(folder_n, i))
+        image.save("./background{0}/background_blots_{1}.jpg".format(folder_n,i))
+        print("./background//background_blots_{0}.jpg".format(folder_n, i))
         image = camogen.generate(color_param)
-        image.save("./foreground{0}/foreground_blots_{1}.png".format(folder_n, i))
-        print("./foreground{0}/foreground_blots_{1}.png".format(folder_n, i))
+        image.save("./foreground{0}/foreground_blots_{1}.jpg".format(folder_n, i))
+        print("./foreground{0}/foreground_blots_{1}.jpg".format(folder_n, i))
         i += 1
