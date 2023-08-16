@@ -2,38 +2,23 @@
 > **Developers:** 
 > [Kaney Nguyen](https://github.com/MagicKey23/) &
 > [Martin Navarrete](https://github.com/mnavarrete12) 
-<div align="center">
-<figure>
-    <a href="./">
-        <img src="./img/img22.png" width="79%"/>
-    </a>
-    <div class = "text-align:center">
-    <figcaption>Figure 1 - Camouflaged with a pyramid</figcaption>
-    </div>
-</figure>
-
-</div>
-
-
-<div align="center">
-<figure>
-    <a href="./">
-        <img src="./img/img22_GT.png" width="79%"/>
-    </a>
-    <div class = "text-align:center">
-    <figcaption>Figure 2 - Ground Truth</figcaption>
-    </div>
-</figure>
-
-</div>
 
 ## Introduction
-- Updating Soon
 
+- In the ever-evolving landscape of computer vision and machine learning, one constant remains: the need for high-quality labeled data. Introducing the Camouflaged Image Generator, a powerful tool designed to revolutionize the image labeling and data generation process for researchers, developers, and AI enthusiasts.
+- Labeling images for object segmentation is a time-consuming task that often demands meticulous attention to detail. Our Camouflaged Image Generator steps in as your trusty ally, streamlining and expediting the labeling process with unparalleled efficiency. By harnessing advanced algorithms, this tool empowers researchers to effortlessly generate images embedded with target segmentation.
+- Our mission is to empower researchers and developers with tools that amplify their capabilities. The Camouflaged Image Generator epitomizes this ethos by providing a seamless solution to a persistent challenge. Whether you're an AI researcher exploring the boundaries of object detection or a developer seeking to train robust machine learning models, our generator equips you with the means to achieve your goals more efficiently.
+
+## Key Features:
+- **Swift Segmentation Generation**: Say goodbye to laborious manual segmentation. Our generator swiftly incorporates target segmentation into images, significantly reducing the time investment required for data labeling.
+- **Negative Image Synthesis**: Enhance your training dataset with ease. The Camouflaged Image Generator doesn't stop at positive examples – it creates negative images as well. This ingenious feature bolsters the diversity of your dataset and simplifies the training process.
+- **Unleash Innovation**: With the burden of repetitive data generation lifted, you're free to channel your energy into innovation. Propel your research forward, experiment with cutting-edge techniques, and unlock new possibilities in the realm of computer vision.
 
 ## Video Demo.
 
-...
+
+https://github.com/MagicKey23/camo_dataset_generator/assets/22732906/7909b70f-3347-423b-a8f8-e39e1161e703
+
 
 
 ## Use Case
@@ -178,14 +163,9 @@ Fra:1 Mem:32.03M (0.00M, Peak 36.46M) | Time:00:00.04 | Scene, Part 4-130
 Fra:1 Mem:32.52M (0.00M, Peak 36.46M) | Time:00:00.04 | Scene, Part 10-130
 Fra:1 Mem:33.95M (0.00M, Peak 36.46M) | Time:00:00.04 | Sc
 ```
-
-## Result
-
-
 ## Citation
 
 ```
-
 @Software{Camouflaged Generator,
     author    = {Kaney Nguyen, Martin Navarrete},
     title     = {PFNet_Ease},
