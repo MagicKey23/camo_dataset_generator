@@ -31,19 +31,18 @@ https://github.com/MagicKey23/camo_dataset_generator/assets/22732906/7909b70f-33
 
 
 ## Installation
-
-
+***REQUIRED***:
+- BLENDER 2.79a or 2.79b other version won't work
+- Python 3.8 or above, but blender will use built-in python version.
 ``` shell
 
-REQUIRED:
-BLENDER 2.79a or 2.79b other version won't work
+
 
 # clone the git hub
 git clone https://github.com/MagicKey23/camo_dataset_generator
 # go to code folder
 cd camo_dataset_generator
-# apt install required packages
-pip install -r requirements
+
 ```
 
 
