@@ -168,7 +168,7 @@ Fra:1 Mem:33.95M (0.00M, Peak 36.46M) | Time:00:00.04 | Sc
 @Software{Camouflaged Generator,
     author    = {Kaney Nguyen, Martin Navarrete},
     title     = {PFNet_Ease},
-    webpage = {[https://github.com/MagicKey23/PFNet_Ease/](https://github.com/MagicKey23/camo_dataset_generator)},
+    webpage = {[https://github.com/MagicKey23/camo_dataset_generator](https://github.com/MagicKey23/camo_dataset_generator)},
     month     = {April},
     year      = {2023}
 }
