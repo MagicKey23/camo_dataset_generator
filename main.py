@@ -24,18 +24,16 @@ def main():
         elif(response == "2"):
             print("Input Valid!")
             print("run option 2")
-            response  = option_2()
+            response = option_2()
         else:
             print("invalid response, retry")
             response = input("Type '1' or '2': \n")
     sys.exit()
 def option_1(opt):
 
-    folder_num = input("Enter background folder number, ex: 1 for background1 or 2 for background2 \n")
-
     number_img = input("How many image?\n")
 
-    generate_camo.run_generator(int(folder_num), int(number_img), opt)
+    generate_camo.run_generator(int(number_img), opt)
     return False
 
 def option_2():

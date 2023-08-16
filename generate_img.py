@@ -44,8 +44,8 @@ def getvars(resx, resy):
 def camo_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, path, negative_enabled, renderRes_x,
                 renderRes_y, scaleFactor, start):
 
-    original_img_path = path + "/outputFiles/"
-    negative_img_path = path + "/outputFilesneg/"
+    original_img_path = path + "/output_files/"
+    negative_img_path = path + "/output_files_negative/"
 
     objs = bpy.data.objects
 
@@ -54,17 +54,10 @@ def camo_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, path,
     imgNum = start  # + len(listFiles(dir=path + "/outputFiles/", ext='.jpg'))
     print(imgNum)
     f.write("img" + str(imgNum) + " ")
-    whichBG = random.randint(0, 1)
-    if whichBG == 0:
-        backgrTexPath = path + "/background1/"
-        foregroundTextures = path + "/foreground1/"
+    backgrTexPath = path + "/background/"
+    foregroundTextures = path + "/foreground/"
+    f.write("background")
 
-        f.write("fruit ")
-    else:
-        backgrTexPath = path + "/background2/"
-        foregroundTextures = path + "/foreground2/"
-
-        f.write("tree ")
 
     ################################################################################
     # Select a random background
@@ -114,11 +107,11 @@ def camo_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, path,
                              axis_up='Y')
 
     #################################################################################
-    bpy.data.objects[0].name = 'FaceObject'
+    bpy.data.objects[0].name = 'FileObject'
     # print(bpy.data.objects[0].name)
 
     #################################################################################
-    face_obj = bpy.data.objects["FaceObject"]
+    face_obj = bpy.data.objects["FileObject"]
 
     face_obj.location = (0.0, y / renderRes_y, -x / renderRes_y)
 
@@ -278,7 +271,7 @@ def camo_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, path,
         if negative_enabled:
             bpy.ops.object.select_all(action='DESELECT')
             face_obj.select = True
-            objs.remove(objs["FaceObject"], do_unlink=True)
+            objs.remove(objs["FileObject"], do_unlink=True)
             bpy.ops.object.select_all(action='DESELECT')
 
             myFileName = ("img" + str(imgNum) + "_negative")
@@ -297,8 +290,8 @@ def camo_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, path,
 
 def contour_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, path, negative_enabled, renderRes_x,
                    renderRes_y, scaleFactor, start=0):
-    original_contour_path = path + "/outputFilescontour/"
-    negative_contour_path = path + "/outputFilescneg/"
+    original_contour_path = path + "/output_files_contour/"
+    negative_contour_path = path + "/output_files_contour_neg/"
 
     objs = bpy.data.objects
 
@@ -347,11 +340,11 @@ def contour_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, pa
                              axis_up='Y')
 
     #################################################################################
-    bpy.data.objects[0].name = 'FaceObject'
+    bpy.data.objects[0].name = 'FileObject'
     # print(bpy.data.objects[0].name)
 
     #################################################################################
-    face_obj = bpy.data.objects["FaceObject"]
+    face_obj = bpy.data.objects["FileObject"]
 
     face_obj.location = (0.0, y / renderRes_y, -x / renderRes_y)
 
@@ -489,7 +482,7 @@ def contour_images(x, y, rx, ry, rz, infile, fore_head_object_path, log_path, pa
 
     bpy.ops.object.select_all(action='DESELECT')
     face_obj.select = True
-    objs.remove(objs["FaceObject"], do_unlink=True)
+    objs.remove(objs["FileObject"], do_unlink=True)
     bpy.ops.object.select_all(action='DESELECT')
 
     if negative_enabled:
